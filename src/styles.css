@@ -1,3 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+@use 'tailwindcss';
 
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@config "./tailwind.config.js";
+
+:root {
+  --color-primary: 0 114 245;
+  --color-bg-light: 245 247 248;
+  --color-bg-dark: 15 24 35;
+
+  --radius-default: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+}
+
+.dark {
+  --color-bg-light: 15 24 35;
+}
