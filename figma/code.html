@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Izhan Lara | Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0072f5",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1823",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .code-gradient {
+            background: linear-gradient(135deg, #0072f5 0%, #00d1ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased font-display">
+<!-- Header / Nav -->
+<header class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">code</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-slate-900">IZHAN LARA</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#proyectos">Proyectos</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#sobre-mi">Sobre mí</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="#habilidades">Habilidades</a>
+<a class="px-4 py-2 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-blue-600 transition-all" href="mailto:contact@izhanlara.dev">Contacto</a>
+</nav>
+<button class="md:hidden text-slate-900">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-20 lg:py-32 border-b border-slate-50">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        Disponible para nuevos proyectos
+                    </div>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 leading-[0.9]">
+                        IZHAN <br/> LARA
+                    </h1>
+<p class="text-xl md:text-2xl text-slate-500 max-w-xl leading-relaxed">
+                        Web Developer building high-performance web experiences with <span class="text-slate-900 font-semibold">React, PHP, and MySQL.</span>
+</p>
+<div class="flex flex-wrap gap-4">
+<a class="flex h-14 px-8 items-center justify-center bg-primary text-white font-bold rounded-xl hover:shadow-lg hover:shadow-primary/30 transition-all text-lg" href="#proyectos">
+                            Ver proyectos
+                        </a>
+<a class="flex h-14 px-8 items-center justify-center border-2 border-slate-200 text-slate-900 font-bold rounded-xl hover:bg-slate-50 transition-all text-lg" href="mailto:hello@izhanlara.com">
+                            Contacto
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 bg-slate-900 rounded-xl p-6 shadow-2xl border border-slate-800 font-mono text-sm leading-relaxed overflow-hidden">
+<div class="flex gap-2 mb-4 border-b border-slate-800 pb-3">
+<div class="size-3 rounded-full bg-red-500/30"></div>
+<div class="size-3 rounded-full bg-yellow-500/30"></div>
+<div class="size-3 rounded-full bg-green-500/30"></div>
+</div>
+<div class="text-blue-400">const</div> <div class="text-purple-400 inline">Project</div> <div class="text-slate-300 inline">= () =&gt; {</div>
+<div class="pl-4">
+<div class="text-blue-400 mt-2">return</div> <div class="text-slate-300 inline">(</div>
+<div class="pl-4 text-emerald-400">
+                                &lt;div className="max-w-4xl"&gt;<br/>
+<span class="pl-4">&lt;h1&gt;Building the future&lt;/h1&gt;</span><br/>
+<span class="pl-4 text-slate-500">// Modern web apps</span><br/>
+                                &lt;/div&gt;
+                            </div>
+<div class="text-slate-300">);</div>
+</div>
+<div class="text-slate-300">}</div>
+<div class="absolute -bottom-4 -right-4 w-32 h-32 code-gradient blur-3xl opacity-20"></div>
+</div>
+<!-- Decorative back elements -->
+<div class="absolute -top-10 -right-10 size-48 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-24 bg-background-light/50" id="proyectos">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+<div class="max-w-2xl">
+<h2 class="text-3xl md:text-4xl font-black tracking-tight text-slate-900 mb-4">Proyectos Destacados</h2>
+<p class="text-slate-500 text-lg">Una selección de soluciones digitales enfocadas en rendimiento y escalabilidad.</p>
+</div>
+<div class="h-px flex-grow bg-slate-200 hidden md:block mx-8 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Screenshot of a modern minimalist e-commerce dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnK7u54WF4VCC2HDYXlPkyVHkR5mW_8lcE2T-ppjOrlqPzk-l8PMlp1JoZ4bZ35xD4SkzD8GgHu_f-z1DWKLiDuuM3pNLsGeE-hM4ux1j1aAP0U9urbBQFqJMY-FWl4pFGm6MKidOfOnok7tIyhXeRCzrXv_8HX__hK9cfHv9kcP7DTZgOLC0zoA8xyI_9NAhERzDyOxEIauGe6JHkL2tR4maSjqoJYzZSdlb8_utxQBOYfS6J6Appo1cFxt4ZAtfGLXpLYuxbZvPv"/>
+</div>
+<div class="p-6">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">React</span>
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Tailwind</span>
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">MySQL</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-2">E-commerce Platform</h3>
+<p class="text-slate-500 text-sm mb-6 line-clamp-2">Plataforma de comercio electrónico con gestión de inventario en tiempo real y pasarela de pagos integrada.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-sm group/btn" href="#">
+                                Ver proyecto 
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Clean data visualization dashboard for SaaS metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYPt1-a8LPq7pkPNG-ctmX227CGHybaT0S9IHcNdIM2w9NB_kntUoEfPXyiH8PozJR2UAH9WMB2xUeRlQgS6CZeKUCCQz90pIlRInk_GGaTFDwpDLSk0rPg2WHjQWST95nG3Tvjewf1JDbOip4NXmBKfyn-T-m6CLUx3HrzyqtIZHWnkYqbB88yNH4vItHY3BuqlDxURWkvlno7yMF6miKKhtdQykMT9wP1VTINfo06RzEj-MRCmAtvVI6RClgl2C6RQ6bKXLb8epN"/>
+</div>
+<div class="p-6">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">PHP</span>
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">WordPress</span>
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">API</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-2">SaaS Business Dashboard</h3>
+<p class="text-slate-500 text-sm mb-6 line-clamp-2">Panel de administración personalizado para la gestión de métricas clave y automatización de reportes.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-sm group/btn" href="#">
+                                Ver proyecto 
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-white rounded-xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video relative overflow-hidden bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark themed code editor with abstract UI elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVQ6v0Uo4CHnLisufP58vSoRtIyBgg1RJAXWP4udUGeu3oDkFyOdeablR4PpBJcT8lyg5PpZ0L5kwd-B3Q6ApQuS96CxLqZ2d_peQlbDIpkAHIh7yFOJ5rKyT4e_h8G5YjVvauJWD2nsiZmJgmpslAb2G76VKB7YNhNfLxUUTrE9TQbcohAhHbcPwS5Hcq7wW47lnqmOzI2tp_zci4gcTFTITtyiNqO3rTd5cz_vdVlhONUWziyPpmBQuM4zCRnHix7GH_a52J4l-v"/>
+</div>
+<div class="p-6">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Next.js</span>
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Netlify</span>
+<span class="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-bold uppercase rounded">Git</span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 mb-2">Dev Portfolio Kit</h3>
+<p class="text-slate-500 text-sm mb-6 line-clamp-2">Template optimizado para desarrolladores con soporte para MDX, temas claro/oscuro y despliegue rápido.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-sm group/btn" href="#">
+                                Ver proyecto 
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About & Skills Section -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-6" id="sobre-mi">
+<h2 class="text-3xl font-black tracking-tight text-slate-900 mb-8 flex items-center gap-3">
+<span class="size-2 bg-primary rounded-full"></span>
+                            Sobre mí
+                        </h2>
+<p class="text-lg text-slate-500 leading-relaxed max-w-xl">
+                            Especialista en desarrollo web con amplia experiencia tanto en <span class="text-slate-900 font-semibold">frontend como backend</span>. Mi enfoque se centra en crear arquitecturas robustas y escalables utilizando el ecosistema de React y soluciones de servidor eficientes con PHP y MySQL.
+                        </p>
+</div>
+<div class="lg:col-span-6" id="habilidades">
+<h2 class="text-3xl font-black tracking-tight text-slate-900 mb-8 flex items-center gap-3">
+<span class="size-2 bg-primary rounded-full"></span>
+                            Habilidades
+                        </h2>
+<div class="flex flex-wrap gap-3">
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">React</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">JavaScript</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">PHP</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">MySQL</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">WordPress</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">Netlify</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">Git</div>
+<div class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default">Tailwind CSS</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Contact Footer -->
+<section class="py-24 bg-slate-900 text-white rounded-t-[3rem] mt-12">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-black tracking-tight mb-6">¿Tienes un proyecto en mente?</h2>
+<p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">Hablemos sobre cómo puedo ayudarte a construir tu próxima gran idea digital.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-20">
+<a class="flex items-center gap-3 text-lg font-bold hover:text-primary transition-colors group" href="mailto:contact@izhanlara.dev">
+<span class="material-symbols-outlined text-primary">mail</span>
+                        contact@izhanlara.dev
+                    </a>
+<span class="hidden md:block text-slate-700">|</span>
+<div class="flex items-center gap-8">
+<a class="text-slate-400 hover:text-white transition-colors flex items-center gap-1 font-medium" href="#">
+                            GitHub
+                        </a>
+<a class="text-slate-400 hover:text-white transition-colors flex items-center gap-1 font-medium" href="#">
+                            LinkedIn
+                        </a>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-sm">
+<p>© 2024 Izhan Lara. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-slate-300 transition-colors" href="#">Stack Tecnológico</a>
+<a class="hover:text-slate-300 transition-colors" href="#">Currículum</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>

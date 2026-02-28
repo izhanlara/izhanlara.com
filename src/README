@@ -1,0 +1,63 @@
+# Portfolio App
+
+A personal portfolio built using Angular and Tailwind CSS.
+
+## 🚀 Features
+
+- **Server-side rendering** with Angular Universal (see `main.server.ts` & `server.ts`)
+- Component-based architecture in app with layout, UI, and availability components
+- Static data stored as JSON under `src/app/Media/Profile` (e.g. `profile.json`, `projects.json`)
+- Simple routing configured in `app.routes.ts` / `app.routes.server.ts`
+- Tailwind CSS for styling (`tailwind.config.js`)
+- Includes a small test (`app.spec.ts`) and a standalone HTML test page
+
+## 📁 Project Structure
+
+```
+src/
+  index.html
+  main.ts
+  main.server.ts
+  server.ts
+  app/
+    app.ts
+    app.html
+    app.css
+    app.routes.ts
+    app.routes.server.ts
+    components/
+      layout/…
+      ui/…
+    media/
+    Profile/
+      profile.json
+      projects.json
+    test/
+      test.html
+```
+
+## 🛠️ Getting Started
+
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server**
+
+   ```bash
+   npm start
+   ```
+
+3. **Run tests**
+
+   ```bash
+   npm test
+   ```
+
+## 📌 Notes
+
+- The application uses Angular’s CLI configuration (angular.json, `tsconfig.*.json`).
+- `styles.css` and Tailwind configuration control global styling.
+- Modify JSON files in Profile to update personal info or project listings.

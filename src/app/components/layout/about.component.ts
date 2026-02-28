@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about',
-  template: ` <section class="py-24 bg-white">
+  template: ` <section class="about-section py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
         <div class="lg:col-span-6" id="sobre-mi">
@@ -195,6 +195,6 @@ import { Component } from '@angular/core';
       </div>
     </div>
   </section>`,
-  styleUrls: [],
+  styleUrls: ['../components.css'],
 })
 export class AboutComponent {}

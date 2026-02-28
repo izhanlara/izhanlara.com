@@ -1,0 +1,15 @@
+@media (max-width: 1025px) {
+    .about-section{
+        margin-top: 25%;
+    }
+}
+@media (max-width: 768px) {
+    .about-section{
+        margin-top: 150%;
+    }
+}
+@media (max-width: 425px) {
+    .about-section{
+        margin-top: 150%;
+    }
+}
