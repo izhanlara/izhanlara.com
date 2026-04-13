@@ -1,60 +1,145 @@
-# Izhanlara3
+# Izhanlara Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+Portafolio personal desarrollado con Angular 21, SSR y Tailwind CSS.
 
-## Development server
+Este proyecto muestra una landing principal y una sección de proyectos, con datos consumidos desde una API local simulada mediante json-server.
 
-To start a local development server, run:
+## Stack principal
 
-```bash
-ng serve
-```
+- Angular 21 (standalone components)
+- Angular SSR (renderizado en servidor)
+- Tailwind CSS 4 + PostCSS
+- Vitest (tests unitarios)
+- json-server (API local para proyectos)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Requisitos
 
-## Code scaffolding
+- Node.js 20 o superior
+- npm 11 o superior
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Instalación
 
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
-
-To build the project run:
+## Scripts disponibles
 
 ```bash
-ng build
+npm run start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Inicia el servidor de desarrollo en http://localhost:4200.
 
 ```bash
-ng test
+npm run api
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Inicia json-server en http://localhost:3000 usando src/app/Profile/projects.json.
 
 ```bash
-ng e2e
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Genera el build de producción en dist/.
 
-## Additional Resources
+```bash
+npm run watch
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# portfolio
+Build en modo desarrollo con watch.
+
+```bash
+npm run test
+```
+
+Ejecuta tests unitarios.
+
+```bash
+npm run serve:ssr:izhanlara3
+```
+
+Sirve la app SSR desde el output de dist/ (requiere haber hecho build antes).
+
+## Flujo recomendado en local
+
+1. Instalar dependencias.
+2. Levantar la API local en una terminal:
+
+   ```bash
+   npm run api
+   ```
+
+3. Levantar la aplicación en otra terminal:
+
+   ```bash
+   npm run start
+   ```
+
+4. Abrir http://localhost:4200.
+
+## Rutas principales
+
+- / -> Home
+- /projects -> Página de proyectos
+
+## Estructura del proyecto
+
+```text
+src/
+	app/
+		components/
+			layout/
+				about/
+				footer/
+				header/
+				navBar/
+				projects/
+			ui/
+				availability/
+		pages/
+			home/
+			projects-page/
+		services/
+			projects.service.ts
+		Profile/
+			profile.json
+			projects.json
+	main.ts
+	main.server.ts
+	server.ts
+	styles.css
+```
+
+## Datos de proyectos
+
+El servicio de proyectos consume la API local en:
+
+```text
+http://localhost:3000/projects
+```
+
+Puedes editar los datos desde:
+
+```text
+src/app/Profile/projects.json
+```
+
+## SSR
+
+La app está preparada para renderizado en servidor con Angular SSR.
+
+Archivos clave:
+
+- src/main.server.ts
+- src/server.ts
+- src/app/app.routes.server.ts
+
+## Notas
+
+- El archivo src/app/Profile/profile.json existe pero está vacío actualmente.
+- El proyecto usa assets públicos desde la carpeta public/.
+
+## Licencia
+
+Uso personal.

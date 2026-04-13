@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "aboutMe": "I am a Web Developer passionate about building high-performance, scalable, and well-structured digital experiences. My background combines strong frontend development with modern frameworks like Angular and React, together with solid backend foundations using Node.js, PHP, and SQL databases. I enjoy designing clean architectures, writing maintainable code, and creating interfaces that feel both intuitive and purposeful.",
+    "skills": [
+      "Angular",
+      "React",
+      "Astro",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Node.js",
+      "PHP",
+      "SQL",
+      "MySQL",
+      "WordPress",
+      "Shopify",
+      "Git",
+      "GitHub",
+      "Netlify",
+      "ESLint",
+      "OpenAI API",
+      "Microsoft Teams Bots",
+      "Atlassian Rovo",
+      "Confluence",
+      "Discord Bots",
+      "Webhooks"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Kit v2",
+      "description": "A customizable portfolio template built with Angular and Tailwind CSS.",
+      "imageUrl": "assets/img/kitv1.png",
+      "projectUrl": "https://github.com/izhanlara/portfolio",
+      "tags": ["Angular", "Tailwind"],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "NAW: News Around the World",
+      "description": "NAW (News Around the World) is a news platform that keeps you informed about the most important global events with multilingual support.",
+      "imageUrl": "assets/img/naw.png",
+      "projectUrl": "https://github.com/NAW-News-Around-the-World/NAW.github.io",
+      "tags": ["Angular", "SCSS", "API"],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "ISB Instalaciones",
+      "description": "Corporate site built in WordPress for showcasing firefighting installation services and completed projects.",
+      "imageUrl": "assets/img/isb.png",
+      "projectUrl": "https://isbinstalaciones.com/",
+      "tags": ["WordPress"],
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "TaskFlow Dashboard",
+      "description": "Productivity dashboard concept with Kanban flow, analytics widgets and lightweight team collaboration.",
+      "imageUrl": "assets/img/taskflow-dashboard.png",
+      "projectUrl": "https://github.com/izhanlara",
+      "tags": ["Angular", "UX"],
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Landing Builder",
+      "description": "Reusable landing page system focused on conversion, speed and visual consistency for marketing teams.",
+      "imageUrl": "assets/img/landing-builder.png",
+      "projectUrl": "https://github.com/izhanlara",
+      "tags": ["Tailwind", "Design System"],
+      "featured": false
+    }
+  ]
+}
