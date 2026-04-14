@@ -26,6 +26,6 @@ export class ProjectsComponent {
   }
 
   public trackByProjectId(id: number, card: Card): number {
-    return (card.id, card.id);
+    return card.id;
   }
 }

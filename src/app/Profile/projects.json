@@ -19,13 +19,8 @@
       "Git",
       "GitHub",
       "Netlify",
-      "ESLint",
       "OpenAI API",
-      "Microsoft Teams Bots",
-      "Atlassian Rovo",
-      "Confluence",
-      "Discord Bots",
-      "Webhooks"
+      "Discord Bots"
     ]
   },
   "projects": [
