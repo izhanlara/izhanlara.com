@@ -4,15 +4,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRouteSnapshot, NavigationEnd, Router } from '@angular/router';
 import { filter, startWith } from 'rxjs';
-
-interface SeoRouteData {
-  title: string;
-  description: string;
-  keywords: string;
-  path: string;
-  type: string;
-  image: string;
-}
+import { SeoRouteData } from '../model/seo.model';
 
 const SITE_URL = 'https://izhanlara.com';
 const DEFAULT_IMAGE = '/assets/img/logo.png';
