@@ -1,30 +1,36 @@
-<section class="about-section py-24 bg-white">
+<section id="about" class="about-section py-24 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-      <div class="lg:col-span-6" id="about-me">
-        <h2 class="text-3xl font-black tracking-tight text-slate-900 mb-8 flex items-center gap-3">
+      <div class="lg:col-span-6">
+        <h2
+          class="text-3xl font-black tracking-tight text-slate-900 mb-8 flex items-center gap-3"
+        >
           <span class="size-2 bg-primary rounded-full"></span>
           About me
         </h2>
-        <p class="text-lg text-slate-500 leading-relaxed max-w-xl">{{ getProfile().aboutMe }}</p>
+        <p class="text-lg text-slate-500 leading-relaxed max-w-xl">
+          {{ getProfile().aboutMe }}
+        </p>
       </div>
-
-      <div class="lg:col-span-6" id="skills">
-        <h2 class="text-3xl font-black tracking-tight text-slate-900 mb-8 flex items-center gap-3">
-          <span class="size-2 bg-primary rounded-full"></span>
-          Skills
-        </h2>
-
-        <div class="flex flex-wrap gap-3">
-          @for (skill of getProfile().skills; track skill) {
-            <div
-              class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default"
-            >
-              {{ skill }}
-            </div>
-          }
+      <section id="skills" class="skills-section lg:col-span-6">
+        <div class="lg:col-span-6">
+          <h2
+            class="text-3xl font-black tracking-tight text-slate-900 mb-8 flex items-center gap-3"
+          >
+            <span class="size-2 bg-primary rounded-full"></span>
+            Skills
+          </h2>
+          <div class="flex flex-wrap gap-3">
+            @for (skill of getProfile().skills; track skill) {
+              <div
+                class="px-5 py-2.5 rounded-xl border border-slate-100 bg-slate-50 text-slate-900 font-bold text-sm hover:border-primary/30 hover:bg-primary/5 transition-all cursor-default"
+              >
+                {{ skill }}
+              </div>
+            }
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   </div>
 </section>

@@ -6,11 +6,13 @@
     <p class="text-slate-400 text-lg mb-12 max-w-xl mx-auto">
       Let's talk about how I can help you build your next great digital idea.
     </p>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-20">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-6 mb-20"
+    >
       <a
         class="flex items-center gap-3 text-lg font-bold hover:text-primary transition-colors group"
         [href]="contactLink.href"
-        >
+      >
         <img src="/assets/icons/mail.svg" class="w-5 h-5" alt="Email icon" />
         {{ contactLink.label }}
       </a>
@@ -22,7 +24,7 @@
             [href]="link.href"
             [target]="link.target || null"
             [rel]="link.rel || null"
-            >
+          >
             {{ link.label }}
           </a>
         }
@@ -30,13 +32,10 @@
     </div>
     <div
       class="pt-12 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-sm"
-      >
+    >
       <div class="flex gap-8">
         @for (link of footerLinks; track link) {
-          <a
-            class="hover:text-slate-300 transition-colors"
-            [href]="link.href"
-          >
+          <a class="hover:text-slate-300 transition-colors" [href]="link.href">
             {{ link.label }}
           </a>
         }

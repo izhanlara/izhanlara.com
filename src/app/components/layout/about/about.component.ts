@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 
-import { ProfileData, ProfileService } from '@services/profile.service';
+import { ProfileService } from '@services/profile.service';
+import { ProfileData } from '@model/profile.model';
 
 @Component({
   selector: 'app-about',

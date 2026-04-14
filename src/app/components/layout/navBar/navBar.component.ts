@@ -11,7 +11,7 @@ export class NavBarComponent {
   public routes: NavBarRouteData[] = [
     { title: 'Home', href: '#home' },
     { title: 'Projects', href: '#projects' },
-    { title: 'About', href: '#about-me' },
+    { title: 'About', href: '#about' },
     { title: 'Skills', href: '#skills' },
     { title: 'Contact', href: 'mailto:dev@izhanlara.com' },
   ];
